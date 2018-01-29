@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BookDetailComponent } from './book-detail/book-detail.component';
+import { BooksService } from './books.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
