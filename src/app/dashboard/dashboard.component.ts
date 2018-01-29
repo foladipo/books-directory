@@ -9,6 +9,7 @@ import { BooksService } from '../books.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  title: String = 'Welcome to the Book Directory!'
   books: Book[];
   constructor(private booksService: BooksService) { }
 

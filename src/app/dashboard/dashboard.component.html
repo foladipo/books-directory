@@ -1,7 +1,6 @@
 <div class="container-fluid">
-  <h1>
-    Dashboard
-  </h1>
+  <h1>{{title}}</h1>
+  <h2>Dashboard</h2>
   <ul class="row books-list-container">
     <li *ngFor="let book of books" class="col-sm-6 col-md-4 rounded">
       <app-book-detail [book]="book"></app-book-detail>
