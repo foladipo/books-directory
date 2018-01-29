@@ -7,13 +7,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BooksService } from './books.service';
+import { BookProfileComponent } from './book-profile/book-profile.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    BookDetailComponent
+    BookDetailComponent,
+    BookProfileComponent
   ],
   imports: [
     BrowserModule,
