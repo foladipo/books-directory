@@ -1,8 +1,11 @@
-<h1>
-  Dashboard
-</h1>
-<ul>
-  <li *ngFor="let book of books">
-    <app-book-detail [book]="book"></app-book-detail>
-  </li>
-</ul>
+<div class="container-fluid">
+  <h1>
+    Dashboard
+  </h1>
+  <ul class="row books-list-container">
+    <li *ngFor="let book of books" class="col-sm-6 col-md-4 rounded">
+      <app-book-detail [book]="book"></app-book-detail>
+    </li>
+  </ul>
+</div>
+  
