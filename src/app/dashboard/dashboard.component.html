@@ -1,0 +1,11 @@
+<h1>
+  Dashboard
+</h1>
+<ul *ngFor="let book of books">
+  <li>
+    Name: {{book.name}}<br/>
+    Author: {{book.author}}<br/>
+    Year of Publication: {{book.yearOfPublication}}<br/>
+    <!-- Genres: {{book.genres | arrayToCommaSeparatedString}} -->
+  </li>
+</ul>
