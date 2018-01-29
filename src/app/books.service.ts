@@ -83,4 +83,11 @@ export class BooksService {
   getAllBooks(): Book[] {
     return this.books;
   }
+
+  getBook(id: number): Book {
+    const targetBook = this.books.find(book =>
+      book.id === id
+    );
+    return targetBook;
+  }
 }
