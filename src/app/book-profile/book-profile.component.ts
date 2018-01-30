@@ -20,18 +20,10 @@ export class BookProfileComponent implements OnInit {
     this.getBook();
   }
 
-  // TODO: Add more elegant error handling here.
   getBook() {
     const bookId = Number(this.route.snapshot.paramMap.get('id'));
     console.log('bookId', bookId);
     if (Number.isNaN(bookId)) {
-      this.book = {
-        id: -1,
-        name: 'ERROR! Invalid book id!',
-        author: 'Error',
-        yearOfPublication: 'Error',
-        genres: []
-      };
       return;
     }
 

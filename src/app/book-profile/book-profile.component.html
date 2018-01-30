@@ -1,1 +1,14 @@
-<app-book-detail [book]="book"></app-book-detail>
+<div *ngIf="book">
+  <app-book-detail [book]="book"></app-book-detail>
+</div>
+
+<!--
+  TODO: I wonder if this will have to change when using an Observable to make a HTTP request,
+  especially during the "loading" phase of that observable.
+-->
+<div *ngIf="!book" class="container">
+  <div class="alert alert-danger">
+    Error! We cannot identify the book you're looking for.
+  </div>
+</div>
+
