@@ -1,3 +1,7 @@
 .books-list-container {
   list-style-type: none;
 }
+
+.book-item a {
+  text-decoration: none;
+}
