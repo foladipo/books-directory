@@ -22,7 +22,6 @@ export class BookProfileComponent implements OnInit {
 
   getBook() {
     const bookId = Number(this.route.snapshot.paramMap.get('id'));
-    console.log('bookId', bookId);
     if (Number.isNaN(bookId)) {
       return;
     }
