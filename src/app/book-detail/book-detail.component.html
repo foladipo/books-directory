@@ -1,9 +1,9 @@
 <div class="alert alert-success book-detail">
   <h4 class="alert-heading">{{book.name}}</h4>
   <br/>
-  Author: {{book.author}}
+  Author: {{book.author | truncateAfter:20}}
   <br/>
-  Year of Publication: {{book.yearOfPublication}}
+  Year of Publication: {{book.yearOfPublication | truncateAfter:6}}
   <br/>
-  Genres: {{book.genres | arrayToCommaSeparatedList}}
+  Genres: {{book.genres | arrayToCommaSeparatedList | truncateAfter:30}}
 </div>

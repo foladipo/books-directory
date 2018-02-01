@@ -9,7 +9,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { BooksService } from './books.service';
 import { BookProfileComponent } from './book-profile/book-profile.component';
 import { ArrayToCommaSeparatedList } from './custom-pipes/array-to-comma-separated-list';
-
+import { TruncateAfter } from './custom-pipes/truncate-after';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { ArrayToCommaSeparatedList } from './custom-pipes/array-to-comma-separat
     DashboardComponent,
     BookDetailComponent,
     BookProfileComponent,
-    ArrayToCommaSeparatedList
+    ArrayToCommaSeparatedList,
+    TruncateAfter
   ],
   imports: [
     BrowserModule,
